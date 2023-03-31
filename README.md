@@ -76,6 +76,8 @@ Set `CPUs` to the number of (efficiency) cores. This allows Docker to use more o
 
 Set `Memory` to 8 GB or higher. This allows Docker to use more of the available host RAM resources.
 
+Set `Swap` to 1 GB or higher. This allows Docker to use more host resources for swap space.
+
 Set `Virtual disk limit` to 128 GB or higher. This allows Docker to use more of the available host file system resources, particularly for guest /tmp operations.
 
 # CLEAN
