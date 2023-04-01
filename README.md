@@ -91,6 +91,7 @@ Regularly run `docker system prune -a`. This often removes an enormous amount of
 # RESOURCES
 
 * [Docker](https://www.docker.com/)
+* [.dockerignore](https://docs.docker.com/engine/reference/builder/#dockerignore-file)
 * [Docker Multi-stage builds](https://docs.docker.com/build/building/multi-stage/)
 * [Docker Hub](https://hub.docker.com/)
 * [Flatpak](https://flatpak.org/)
