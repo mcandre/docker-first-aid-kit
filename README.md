@@ -80,6 +80,10 @@ Set `Swap` to 1 GB or higher. This allows Docker to use more host resources for 
 
 Set `Virtual disk limit` to 128 GB or higher. This allows Docker to use more of the available host file system resources, particularly for guest /tmp operations.
 
+# VARIOUS DOCKER FAILURES
+
+Docker may begin to act strangely after resuming from host hibernation. When in doubt, restart the Docker service.
+
 # CLEAN
 
 Regularly remove stale containers listed in `docker ps -a`. This removes junk from CPU and disk.
