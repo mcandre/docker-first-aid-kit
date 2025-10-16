@@ -66,7 +66,9 @@ Optimal support for assorted guest containers:
 
 ### Docker resource allocation
 
-Reserve ~0.5 TB space on the host for Docker images. This ensures smoother operation, such as when using Docker for multiple software projects.
+Reserve >= 256 GB space on the host for Docker resources. Reserve >= 1 TB on CI/CD hosts.
+
+This ensures smoother operation, such as when using Docker for multiple software projects.
 
 For laptops, ensure the host is actively receiving power from a wall outlet. This helps the CPU to run at a faster clock rate.
 
