@@ -1,5 +1,7 @@
 # DOCKER FIRST AID KIT
 
+[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md) [![Donate](https://img.shields.io/badge/GUMROAD-36a9ae?style=flat&logo=gumroad&logoColor=white)](https://mcandre.gumroad.com/)
+
 # ABOUT
 
 We provide practical guidance here, for making the best use of the amazing Docker containerized application system.
@@ -106,4 +108,4 @@ Regularly run `docker system prune -f`. This often removes an enormous amount of
 * [Kubernetes](https://kubernetes.io/)
 * [minikube](https://minikube.sigs.k8s.io/docs/start/)
 * [Serverless computing](https://en.wikipedia.org/wiki/Serverless_computing)
-* [tug](https://github.com/mcandre/tug)
+* [tuggy](https://github.com/mcandre/tuggy)
