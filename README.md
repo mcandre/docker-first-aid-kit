@@ -82,7 +82,11 @@ Set `Memory` to 8 GB or higher. This allows Docker to use more of the available 
 
 Set `Swap` to 1 GB or higher. This allows Docker to use more host resources for swap space.
 
-Set `Virtual disk limit` to 128 GB or higher. This allows Docker to use more of the available host file system resources, particularly for guest /tmp operations.
+Set `Disk usage limit` to between 128 GB and 256 GB. This allows Docker to use more of the available host file system resources, particularly for guest /tmp operations, without filling up the entire host disk.
+
+## Warning
+
+Docker Desktop often selects a bad value for Disk usage limit. This can happen with factory resets and fresh installs. Verify the configured value.
 
 # VARIOUS DOCKER FAILURES
 
@@ -95,8 +99,6 @@ Regularly remove stale containers listed in `docker ps -a`. This removes junk fr
 Regularly remove stale images listed in `docker images`. This removes junk from the local Docker image registry.
 
 Regularly run `docker system prune -f`. This often removes an enormous amount of Docker temporary data.
-
-Docker Desktop often enters corrupt states, and none of its self healing features actually work. In which case, reinstall Docker Desktop.
 
 # RESOURCES
 
