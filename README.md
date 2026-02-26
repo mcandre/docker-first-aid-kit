@@ -94,7 +94,11 @@ Regularly remove stale containers listed in `docker ps -a`. This removes junk fr
 
 Regularly remove stale images listed in `docker images`. This removes junk from the local Docker image registry.
 
-Regularly run `docker system prune -f`. This often removes an enormous amount of Docker temporary data.
+Regularly run `docker system prune -f` and `docker buildx prune -f --builder <builder>. This often removes an enormous amount of Docker temporary data.
+
+## Warning
+
+Docker often enters an inconsistent state
 
 # RESOURCES
 
