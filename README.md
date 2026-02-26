@@ -96,7 +96,7 @@ Regularly remove stale images listed in `docker images`. This removes junk from 
 
 Regularly run `docker system prune -f`. This often removes an enormous amount of Docker temporary data.
 
-Note: Docker Desktop often enters corrupt states regarding disk space and/or buildx builders. Select `Docker Desktop` -> (`?` icon) -> `Clean / Purge data`.
+Docker Desktop often enters corrupt states, and none of its self healing features actually work. In which case, reinstall Docker Desktop.
 
 # RESOURCES
 
