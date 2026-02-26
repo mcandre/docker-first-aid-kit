@@ -86,7 +86,7 @@ Set `Disk usage limit` to between 128 GB and 256 GB. This allows Docker to use m
 
 ## Warning
 
-Docker Desktop often selects a bad value for Disk usage limit. This can happen with factory resets and fresh installs. Verify the configured value.
+Docker Desktop often selects a bad value for Disk usage limit. This can happen with factory resets and fresh installs. Verify the desired value.
 
 # VARIOUS DOCKER FAILURES
 
@@ -98,7 +98,9 @@ Regularly remove stale containers listed in `docker ps -a`. This removes junk fr
 
 Regularly remove stale images listed in `docker images`. This removes junk from the local Docker image registry.
 
-Regularly run `docker system prune -f`. This often removes an enormous amount of Docker temporary data.
+Regularly run `docker system prune -f`, and `docker buildx prune -f` when multiplatform images are involved.
+
+These commands often removes an enormous amount of Docker temporary data.
 
 # RESOURCES
 
