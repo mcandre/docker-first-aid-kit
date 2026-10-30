@@ -66,6 +66,8 @@ Optimal support for assorted guest containers:
 * Windows
 * GNU/Linux
 
+Warning: Rosetta sometimes lags behind on Linux systemcall support, causing various commands to fail in containers. Disable Rosetta in your container hypervisor in favor of qemu/libvirt.
+
 ### Docker resource allocation
 
 Reserve >= 256 GB space on the host for Docker resources. Reserve >= 1 TB on CI/CD hosts.
