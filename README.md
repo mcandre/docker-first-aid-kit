@@ -66,7 +66,21 @@ Optimal support for assorted guest containers:
 * Windows
 * GNU/Linux
 
-Warning: Rosetta sometimes lags behind on Linux systemcall support, causing various commands to fail in containers. Disable Rosetta in your container hypervisor in favor of qemu/libvirt.
+### Syscall errors
+
+Note: Many syscalls trigger errors in a variety of Docker hypervisors, including Rosetta, qemu/libvirt, and Docker VMM.
+
+Examples:
+
+* > mkdir: Function not implemented
+* > stat: Function not implemented
+* (various qemu errors)
+
+Especially with newer guest distros targeting openat2.
+
+Consequently, targeting Docker platform ISA's other than the host ISA, is proving to be unreliable.
+
+For this reason, We encourage more Docker image maintainers to support as many ISA's as possible. When in doubt, use Docker Hub, GitHub CI, etc. to build and publish multiplatform images. This way, users are more likely to have buildx ports available for their particular hosts.
 
 ### Docker resource allocation
 
