@@ -1,6 +1,6 @@
 # DOCKER FIRST AID KIT
 
-[![license](https://img.shields.io/badge/license-BSD-3)](LICENSE.md)
+[![License](https://badgen.net/static/license/CC?color=fff)](LICENSE.md)
 
 # ABOUT
 
